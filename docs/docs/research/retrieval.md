@@ -101,6 +101,14 @@ i.e. the 7B can utilize 40 nearest neighbor chunks, a 172M model only 10 NNs.
 
 [http://arxiv.org/abs/2112.04426](http://arxiv.org/abs/2112.04426)
 
+### Izacard et al. 2022: Unsupervised Dense Information Retrieval with Contrastive Learning - "Contriver"
+
+They present Contriver, an open-source implementation of their novel approach to information retrieval using neural networks that outperforms traditional methods and can be applied to a wide range of retrieval settings. The main idea behind Contriver is to use contrastive learning to train dense retrievers for information retrieval. Their key contribution is showing that this approach leads to strong performance in various retrieval settings, including cross-lingual retrieval, and outperforms traditional unsupervised term-frequency methods such as BM25. 
+
+Specifically, on the BEIR benchmark, their unsupervised model outperforms BM25 on 11 out of 15 datasets for the Recall@100. When used as pre-training before fine-tuning, either on a few thousands in-domain examples or on the large MS MARCO dataset, their contrastive model leads to improvements on the BEIR benchmark.
+
+Pre-trained model and source code are available on Huggingface and GitHub.
+
 ### Schick et al. 2023: Toolformer: Language Models Can Teach Themselves to Use Tools
 
 They use in-context learning of GPT-3 and some handcrafted samples to annotate a
